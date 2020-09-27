@@ -1,0 +1,68 @@
+.country-selector {
+    margin-top:30px;
+    text-align:center;
+    &--opened {
+        .arrow {
+            margin-top:5px;
+            transform: rotate(135deg);
+        }
+        .p-menu {
+            display:block;
+        }
+    }
+    &__button {
+        cursor:pointer;
+        width:100%;
+        img {
+            display:block;
+            margin:3px auto;
+        }
+        p {
+            color:#e61d2b;
+            font-size:17px;
+            font-weight:bold;
+            margin:0;
+        }
+        &:hover {
+            color:#e61d2b;
+            
+        }
+    }
+    &__menu {
+        background:url(../images/map.png) no-repeat;
+        background-size:cover;
+        display:none;
+        padding-bottom:30px;
+        h3 {
+            font-size:14px;
+            margin-top:0;
+            text-transform:uppercase;
+        } 
+        ul {
+            margin:0 auto;
+            text-align:left;
+            width:fit-content;
+            li {
+                padding:5px;
+                a {
+                    color:gray;
+                    font-size:14px;
+                    font-weight:100;
+                    text-decoration:none;
+                    &:hover {
+                        color:#e61d2b;
+                    }
+                }
+            }
+        }
+    }
+}
+.arrow {
+    margin:-20px auto 0;
+    transform:rotate(-45deg);
+    width:min-content;
+    &:before {
+        content: "\221F";
+        font-size:45px;
+    }
+}

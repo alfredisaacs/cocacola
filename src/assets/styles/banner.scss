@@ -1,0 +1,34 @@
+@import './variables.scss';
+.banner {
+    overflow:hidden;
+    width:100%;
+    img {
+        width:100%;
+        @media screen and (max-width: $break-small) {
+            height:500px;
+            width:auto;
+        }
+    }
+    &__text {
+        background:#e61d2b;
+        padding:20px;
+        margin-top:-10px;
+        text-align:center;
+        width:calc(100% - 40px);
+        span {
+            color:white;
+            font-size:32px;
+            font-weight:600;
+            text-transform:uppercase;
+        }
+    }
+    .menu-button {
+        color:white;
+        left:50px;
+        position: absolute;
+        top:30px;
+        @media screen and (max-width: $break-small) {
+            left:10px;
+        }
+    }
+}

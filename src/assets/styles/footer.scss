@@ -1,0 +1,28 @@
+.footer {
+    background:#b2b2b2;
+    font-size:12px;
+    padding:30px;
+    text-align:center;
+    p {
+        color:white;
+    }
+    a {
+        border-right:1px solid white;
+        color:white;
+        font-weight: 600;
+        margin-right:4px;
+        padding-right:4px;
+        text-decoration:none;
+        &:hover {
+            color:black;
+            text-decoration:underline;
+        }
+        &:last-child {
+            border-right:none;
+        }
+    }
+    ul {
+        display:flex;
+        justify-content: center;
+    }
+}

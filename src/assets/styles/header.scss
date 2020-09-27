@@ -1,0 +1,38 @@
+@import './variables.scss';
+.header {
+    position:absolute;
+    width:100%;
+    z-index: 9;
+    &-logo {
+        height:127px;
+        margin:0 auto;
+        width:127px;
+        img {
+            width:100%;
+        }
+    }
+    .menu-button {
+        color:black;
+        display:none;
+        left:60px;
+        position: fixed;
+        top:30px;
+        @media screen and (max-width: $break-small) {
+            left:10px;
+            top:30px;
+        }
+    }
+}
+.goDown {
+    .header {
+        background-color:rgba(234, 234, 234, 0.9);
+        position:fixed;
+        &-logo {
+            height:80px;
+            width:80px;
+        }
+    }
+    .menu-button {
+        display:block;
+    }
+}
